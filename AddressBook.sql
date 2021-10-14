@@ -29,3 +29,8 @@ insert into Address_Book values
 
 -- View AddressBook table
 select * from Address_Book
+
+-- Edit existing contact using persons's name
+update Address_Book
+set PhoneNumber = '7654567885',Zipcode='534260' where FirstName = 'Bruce';
+select* from Address_Book;
