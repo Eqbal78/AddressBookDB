@@ -66,3 +66,8 @@ select * from Address_book;
 
 -- Count contacts by type
 select type, COUNT(FirstName) from address_book group by type;
+
+-- Add a contact to both Friend and Family type
+Insert into address_book values
+('Peter','Parker','20 Ingram Street, Forest Hills, Queens','NewYork City','NewYork','10023','4013224355','spiderman@gmail.com','Home','Friends');
+select * from address_book;
