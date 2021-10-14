@@ -49,3 +49,8 @@ where City = 'NewYork City' or State = 'Florida';
 select City,count(City) from Address_Book group by City;
 -- Count contacts by State in Address_Book  
 select State,count(State) from Address_Book group by State;
+
+-- Sort contacts by first name for a given city
+select * from Address_Book
+where City = 'Manhattan'
+order by FirstName asc;
